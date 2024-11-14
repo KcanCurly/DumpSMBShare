@@ -193,8 +193,7 @@ def init_smb_session(args, domain, username, password, address, lmhash, nthash):
             print("[>] USER Session Granted")
     return smbClient
 
-
-if __name__ == "__main__":
+def main():
     args = parse_args()
     args.extensions = [e.strip() for e in args.extensions.strip().split(",") if len(e.strip()) != 0]
 
@@ -228,3 +227,7 @@ if __name__ == "__main__":
                 print("[>] Cannot find share '%s'" % args.share)
     except Exception as e:
         raise e
+
+
+if __name__ == "__main__":
+    main()
