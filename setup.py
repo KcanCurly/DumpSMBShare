@@ -7,7 +7,7 @@ setup(
     description="A script to dump files and folders remotely from a Windows SMB share.",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
-    url="https://github.com/KcanCurly/FindUncommonShares",
+    url="https://github.com/KcanCurly/DumpSMBShare",
     packages=find_packages(),
     install_requires=[
         "impacket",
